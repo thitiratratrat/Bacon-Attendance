@@ -33,7 +33,7 @@ export default Vue.extend({
   methods: {
     async setupAttendanceList() {
       axios
-        .get('http://robbacon-backend.herokuapp.com/baconBack/Attendance/')
+        .get('https://robbacon-backend.herokuapp.com/baconBack/Attendance/')
         .then(response => {
           this.attendances = response.data;
         });
